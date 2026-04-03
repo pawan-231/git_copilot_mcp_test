@@ -184,12 +184,12 @@ The application uses a centralized exception handler (`GlobalExceptionHandler`) 
 
 1. Build the project:
 ```bash
-./gradlew build
+mvn clean install
 ```
 
 2. Run the application:
 ```bash
-./gradlew bootRun
+mvn spring-boot:run
 ```
 
 3. Access H2 Console:

@@ -10,15 +10,16 @@ This is a Spring Boot 4.0.5 project that demonstrates a basic RESTful web servic
 
 - **Spring Boot:** 4.0.5
 - **Java:** 17 (or compatible version)
-- **Build Tool:** Gradle
+- **Build Tool:** Maven 3.6+ (or mvn wrapper)
 - **Language:** Java
+- **Database:** H2 (In-memory)
 
 ## Getting Started
 
 ### Prerequisites
 
 - JDK 17 or higher
-- Gradle 7.0 or higher (or use the included Gradle wrapper)
+- Maven 3.6+ or higher (or use the included Maven wrapper)
 
 ### Installation
 
@@ -30,12 +31,12 @@ cd git_copilot_mcp_test
 
 2. Build the project:
 ```bash
-./gradlew build
+mvn clean install
 ```
 
 3. Run the application:
 ```bash
-./gradlew bootRun
+mvn spring-boot:run
 ```
 
 The application will start on `http://localhost:8080`
@@ -58,29 +59,34 @@ src/
 
 - **Build the project:**
   ```bash
-  ./gradlew build
+  mvn clean install
   ```
 
 - **Run the application:**
   ```bash
-  ./gradlew bootRun
+  mvn spring-boot:run
   ```
 
 - **Run tests:**
   ```bash
-  ./gradlew test
+  mvn test
+  ```
+
+- **Package the application:**
+  ```bash
+  mvn package
   ```
 
 - **Clean build artifacts:**
   ```bash
-  ./gradlew clean
+  mvn clean
   ```
 
 ## References
 
 - [Spring Boot Documentation](https://docs.spring.io/spring-boot/4.0.5/reference/index.html)
 - [Spring Web Reference](https://docs.spring.io/spring-boot/4.0.5/reference/web/servlet.html)
-- [Gradle Documentation](https://docs.gradle.org)
+- [Maven Documentation](https://maven.apache.org/guides/index.html)
 - [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 
 ## License
